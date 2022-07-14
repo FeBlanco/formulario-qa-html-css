@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formularioQA.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Cadastro de QA's</h1>
+            <p id="subtitulo">Preencha com suas informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Em que área você atua?</strong></label>
+                <label>
+                    <input type="checkbox" name="testeManual" value="testeManual" checked>Teste Manual
+                </label>
+                <label>
+                    <input type="checkbox" name="automacao" value="automacao">Automação de Teste
+                </label>
+                <label>
+                    <input type="checkbox" name="Performance" value="performance">Testes de Performance
+                </label>
+            </div>
+
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Estágio</option>
+                  <option>Trainee</option>
+                  <option>Júnior</option>
+                  <option>Pleno</option>
+                  <option>Sênior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de linguagem para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione a linguagem que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="JavaScript">
+                    <label for="tecnologia1"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Java">
+                    <label for="tecnologia2"> Java</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Python">
+                    <label for="tecnologia3"> Python</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Go">
+                    <label for="tecnologia4"> Go</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label><br></br>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Outro">
+                    <label for="tecnologia6"> Outro informe em experiências</label><br><br>
+                <!-- Campo de ferramentas de automação e performance para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div>
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="ferramenta1" name="ferramenta1" value="Cypress">
+                    <label for="ferramenta1"> Cypress</label>
+                    <input type="checkbox" id="ferramenta2" name="ferramenta2" value="Selenium">
+                    <label for="ferramenta2"> Selenium</label>
+                    <input type="checkbox" id="ferramenta3" name="ferramenta3" value="Robot Framework">
+                    <label for="ferramenta3"> Robot Framework</label>
+                    <input type="checkbox" id="ferramenta4" name="ferramenta4" value="Appium">
+                    <label for="ferramenta4"> Appium</label><br><br>
+                    <input type="checkbox" id="ferramenta5" name="ferramenta5" value="Jmeter">
+                    <label for="ferramenta5"> Jmeter</label>
+                    <input type="checkbox" id="ferramenta6" name="ferramenta6" value="K6">
+                    <label for="ferramenta6"> K6</label>
+                    <input type="checkbox" id="ferramenta7" name="ferramenta7" value="Postman">
+                    <label for="ferramenta7"> Postman</label><br><br>
+                    <input type="checkbox" id="ferramenta8" name="ferramenta8" value="Outro">
+                    <label for="ferramenta8"> Outro informe em experiências</label>
+                </div>
+                
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea><br><br>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
